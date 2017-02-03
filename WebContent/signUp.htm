@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+
+.container {
+width:80%;
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 10px;
+}
+
+.select-style {
+    border: 1px solid #ccc;
+    width: 88%;
+    font:bold;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.select-style select {
+    padding: 10px 24px;
+    width: 100%;
+   font:bold;
+    background:white;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 80%;
+    }
+}
+</style>
+<body >
+
+<h2>SignUp with Us</h2>
+
+<form >
+   
+
+  <div class="container">
+  
+    <label><b>Username :</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+<br>
+    <label><b>Password :</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>  
+   
+    <label><b>City :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+    <input type="text" placeholder="Enter City" name="city" required>
+    <br> 
+    
+     <br>
+    <label><b>Type Of User : <br></b></label>
+    
+    <div class="select-style" >
+   
+    <select name="typeofuser">
+  <option value="student">Student</option>
+  <option value="alumni">Alumni</option>
+  <option value="emp">Employee</option>
+  
+</select>
+</div>
+    <br> 
+  <br>   
+      <center>
+    <button type="submit" >Sign Up</button>
+    </center>
+    <br>
+  
+  </div>
+<br>
+<br>
+  
+  <br>
+  <br>
+</form>
+
+</body>
+</html>
