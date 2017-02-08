@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
 <title>Talk</title>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+ 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -18,9 +21,9 @@
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<script type="text/javascript" src="main.js"></script>
-	
-<body ng-app="myApp" background="images/bg2.jpg" class="container">
+<!-- <script type="text/javascript" src="js/main.js"></script>  -->
+	<!-- <body> -->
+<body  background="images/bg2.jpg" class="container">
 
 <nav role="navigation" class="navbar navbar-inverse">
      
@@ -47,10 +50,46 @@
                 </ul>
         </div>
     </nav>
+    
+    <hr>
+    <h1>
+		<center>Collaboration</center>
+	</h1>
+	<hr>
+
+	<a href="#/job">Job</a>
+	<a href="#/friend">Friend</a>
+	<a href="#/blog">Blog</a>
+		
+  <!--  
+    <hr>
+    <h1>
+		<center>Collaboration</center>
+	</h1>
+	<hr>
+
+	<a href="#/job">Job</a>
+	<a href="#/friend">Friend</a>
+	<a href="#/blog">Blog</a>
+		
+     -->
 
 <div ng-view></div>
-
-
-
+    <script src="js/main.js"></script>
+    <script src="js/HomeController.js"></script>
+	<script src="js/BlogController.js"></script>
+	<script src="js/JobController.js"></script>
+	<script src="js/FriendController.js"></script>
+	<script src="js/LoginController.js"></script>
+	<script src="js/LogoutController.js"></script>
+	
+	<!-- <script src="js/main.js"></script>
+	<script src="js/HomeController.js"></script>
+	<script src="js/BlogController.js"></script>
+	<script src="js/JobController.js"></script>
+	<script src="js/FriendController.js"></script>
+	<script src="js/LoginController.js"></script>
+	<script src="js/LogoutController.js"></script>
+ -->
 </body>
 </html>
